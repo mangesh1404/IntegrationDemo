@@ -29,6 +29,6 @@ public class DemoTest {
 	@Test(priority=3)
 	public void verifyUserPage() {
 		driver.findElement(By.xpath("//span[text()='Users']")).click();	
-		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Use");
+		Assert.assertEquals(driver.getTitle(), "JavaByKiran | User");
 	}
 }
