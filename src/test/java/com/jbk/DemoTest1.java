@@ -28,5 +28,10 @@ public class DemoTest1 {
 		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Dashboard");
 	}
 	
+	@Test(priority=3)
+	public void verifyUserPage() {
+		driver.findElement(By.xpath("//span[text()='Users']")).click();	
+		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Use");
+	}
 	
 }
